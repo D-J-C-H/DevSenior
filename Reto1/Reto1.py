@@ -98,7 +98,7 @@ def generar_informe():
         return
     
     nombre_archivo = "informe_experimentos.txt"
-    with open(nombre_archivo, "w") as archivo:
+    with open(nombre_archivo, "w", encoding="utf-8") as archivo:  # Especificamos la codificación UTF-8
         archivo.write("Informe de Experimentos Científicos\n")
         archivo.write("=" * 40 + "\n")
         for exp in experimentos:
@@ -109,6 +109,7 @@ def generar_informe():
             archivo.write("-" * 40 + "\n")
         archivo.write("Fin del informe.\n")
     print(f"Informe guardado en {nombre_archivo}")
+
 
 # Menú principal
 def menu():
