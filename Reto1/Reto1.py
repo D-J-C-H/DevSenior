@@ -1,4 +1,7 @@
+
 import datetime
+import matplotlib.pyplot as plt
+
 
 # Lista para almacenar los experimentos
 experimentos = []
@@ -47,10 +50,11 @@ def ver_experimentos():
         print(f"{i + 1}. {exp['nombre']} - {exp['fecha']} - {exp['tipo']}")
         print(f"   Resultados: {exp['resultados']}")
 
+
 # Función para calcular estadísticas básicas
 def estadisticas():
     print("\n--- Cálculo de Estadísticas ---")
-    ver_experimentos()
+    ver_experimentos()  # Suponiendo que esta función lista los experimentos
     if not experimentos:
         return
     try:
@@ -64,10 +68,27 @@ def estadisticas():
     promedio = sum(resultados) / len(resultados)
     maximo = max(resultados)
     minimo = min(resultados)
+    
+    # Mostrar estadísticas básicas
     print(f"\nEstadísticas de {exp['nombre']}:")
     print(f"  Promedio: {promedio:.2f}")
     print(f"  Máximo: {maximo}")
     print(f"  Mínimo: {minimo}")
+    
+    # Crear la gráfica de barras
+    plt.figure(figsize=(8, 6))
+    plt.bar(range(1, len(resultados) + 1), resultados, color='skyblue')
+    plt.xlabel('Intentos')
+    plt.ylabel('Resultado')
+    plt.title(f"Resultados del Experimento: {exp['nombre']}")
+    
+    # Mostrar las estadísticas en el gráfico
+    plt.axhline(promedio, color='r', linestyle='--', label=f'Promedio: {promedio:.2f}')
+    plt.axhline(maximo, color='g', linestyle='--', label=f'Máximo: {maximo}')
+    plt.axhline(minimo, color='b', linestyle='--', label=f'Mínimo: {minimo}')
+    
+    plt.legend()
+    plt.show()
 
 # Función para comparar experimentos
 def comparar_experimentos():
@@ -79,7 +100,7 @@ def comparar_experimentos():
     
     try:
         indices = input("Seleccione los números de los experimentos a comparar (separados por comas): ")
-        indices = [int(x) - 1 for x in indices.split(",")]
+        indices = [int(x) - 1  for x in indices.split(",")]
         seleccionados = [experimentos[i] for i in indices]
     except (ValueError, IndexError):
         print("Selección inválida.")

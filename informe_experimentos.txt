@@ -1,13 +1,13 @@
-Informe de Experimentos Científicos
+Informe de Experimentos CientÃ­ficos
 ========================================
-Nombre: gravedad
-Fecha: 2020-06-12
-Tipo: Física
-Resultados: [5.3, 6.0, 7.0]
+Nombre: Gravedad
+Fecha: 2020-06-10
+Tipo: FÃ­sica
+Resultados: [2.0, 5.0, 6.0, 3.0]
 ----------------------------------------
-Nombre: cinetica
-Fecha: 2022-03-10
-Tipo: Biología
-Resultados: [4.0, 8.0, 3.9, 8.0]
+Nombre: salinidad
+Fecha: 2022-05-23
+Tipo: QuÃ­mica
+Resultados: [3.0, 6.0, 3.0, 4.0]
 ----------------------------------------
 Fin del informe.
