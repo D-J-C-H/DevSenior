@@ -1,13 +1,18 @@
 Informe de Experimentos Científicos
 ========================================
-Nombre: Gravedad
-Fecha: 2020-06-10
+Nombre: gravedad
+Fecha: 2022-04-10
 Tipo: Física
-Resultados: [2.0, 5.0, 6.0, 3.0]
+Resultados: [2.0, 5.0, 4.0, 3.0]
 ----------------------------------------
-Nombre: salinidad
-Fecha: 2022-05-23
+Nombre: Salinidad
+Fecha: 2023-04-20
 Tipo: Química
-Resultados: [3.0, 6.0, 3.0, 4.0]
+Resultados: [2.0, 5.0, 6.0, 7.0]
+----------------------------------------
+Nombre: fotosintesis
+Fecha: 2023-09-30
+Tipo: Biología
+Resultados: [3.0, 6.3, 2.1, 6.0]
 ----------------------------------------
 Fin del informe.

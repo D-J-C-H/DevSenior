@@ -102,6 +102,7 @@ def comparar_experimentos():
         indices = input("Seleccione los números de los experimentos a comparar (separados por comas): ")
         indices = [int(x) - 1  for x in indices.split(",")]
         seleccionados = [experimentos[i] for i in indices]
+        
     except (ValueError, IndexError):
         print("Selección inválida.")
         return
