@@ -1,0 +1,13 @@
+Informe de Experimentos Cient�ficos
+========================================
+Nombre: gravedad
+Fecha: 2020-06-12
+Tipo: F�sica
+Resultados: [5.3, 6.0, 7.0]
+----------------------------------------
+Nombre: cinetica
+Fecha: 2022-03-10
+Tipo: Biolog�a
+Resultados: [4.0, 8.0, 3.9, 8.0]
+----------------------------------------
+Fin del informe.
