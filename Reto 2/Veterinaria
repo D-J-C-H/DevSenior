@@ -12,7 +12,8 @@ class Persona:
 
 
 
-
+#Clase Cliente (Hereda de Persona)
+#Esta clase representará al cliente y tendrá una lista de mascotas asociadas.
 class Cliente(Persona):
     def __init__(self, nombre, contacto, direccion):
         super().__init__(nombre, contacto, direccion)
@@ -26,7 +27,8 @@ class Cliente(Persona):
 
 
 
-
+#Clase Mascota
+#Representará a las mascotas con un historial de citas.
 class Mascota:
     def __init__(self, nombre, especie, raza, edad):
         self.nombre = nombre
