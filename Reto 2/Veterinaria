@@ -140,7 +140,7 @@ def consultar_historial(mascotas):
 
 def main():
     clientes = []
-    veterinarios = [Veterinario("Dr. Pérez", "555-1234", "Calle Ficticia 123", "Cirugía")]
+    veterinarios = [Veterinario("Dr. Deyvi Caicedo", "555-1234", "Calle 80 con Avda Boyacá", "Cirugía")]
     mascotas = []
     
     while True:
